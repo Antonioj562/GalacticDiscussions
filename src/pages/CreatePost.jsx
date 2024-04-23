@@ -15,7 +15,10 @@ const CreatePost = () => {
         try{
             await supabase
                 .from('Posts')
-                .insert({title: post.title, textBody: post.textBody, alliance: post.alliance});
+                .insert({
+                    title: post.title, 
+                    textBody: post.textBody, 
+                    alliance: post.alliance});
             console.log("Post Created...")
         } catch (error){
             console.error('Error creating post:', error.message);
