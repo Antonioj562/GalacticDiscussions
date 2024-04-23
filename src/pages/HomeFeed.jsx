@@ -22,7 +22,14 @@ const HomeFeed = () => {
                 {
                     posts && posts.length > 0 ?
                     posts.map((post) => 
-                        <Card key={post.id} id={post.id} title={post.title} textBody={post.textBody} alliance={post.alliance}/>
+                        <Card key={post.id} 
+                            id={post.id} 
+                            title={post.title} 
+                            textBody={post.textBody} 
+                            alliance={post.alliance}
+                            created_at={post.created_at}
+                            votes={post.votes}
+                            />
                     ) : <h2>{'No post created.'}</h2>
                 }
             </div>

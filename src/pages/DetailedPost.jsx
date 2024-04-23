@@ -24,7 +24,9 @@ const DetailedPost = () => {
                 id={posts && posts.id}
                 title={posts&& posts.title}
                 textBody={posts && posts.textBody}
-                alliance={posts && posts.alliance}/>
+                alliance={posts && posts.alliance}
+                votes={posts&& posts.votes}
+                created_at={posts&& posts.created_at}/>
             <br></br>
             <h3>Comment Section:</h3>
         </div>
