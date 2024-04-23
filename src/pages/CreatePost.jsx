@@ -10,18 +10,22 @@ const CreatePost = () => {
     });
 
     const createPost = async (event) => {
-        console.log('Testing');
         event.preventDefault();
+        console.log("Submitting post:", post);
         try{
             await supabase
                 .from('Posts')
-                .insert({title: post.title, textBody: post.textBody, alliance: post.alliance, createdBy: post.createdBy});
+                .insert({title: post.title, textBody: post.textBody, alliance: post.alliance});
             console.log("Post Created...")
         } catch (error){
             console.error('Error creating post:', error.message);
         }
     }
 
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setPost({ ...post, [name]: value });
+    };
 
     return (
         <div className="createContainer">
@@ -33,8 +37,8 @@ const CreatePost = () => {
                     type="text"
                     id="title"
                     name="title"
-                    value={post.title} // Add this line
-                    onChange={(e) => setPost({ ...post, title: e.target.value })} // Add this line
+                    value={post.title}
+                    onChange={handleChange}
                     style={{ resize: "none", borderRadius: "10px", padding: "5px" }}
                     /><br />
 
@@ -45,8 +49,8 @@ const CreatePost = () => {
                     cols="50"
                     name="textBody"
                     className="textBody"
-                    value={post.textBody} // Add this line
-                    onChange={(e) => setPost({ ...post, textBody: e.target.value })} // Add this line
+                    value={post.textBody}
+                    onChange={handleChange}
                     style={{ resize: "none", borderRadius: "10px", padding: "10px" }}
                     />
 
@@ -55,9 +59,10 @@ const CreatePost = () => {
                 <select
                     id="alliance"
                     name="alliance"
-                    value={post.alliance} // Add this line
-                    onChange={(e) => setPost({ ...post, alliance: e.target.value })} // Add this line
+                    value={post.alliance} 
+                    onChange={handleChange}
                     >
+                    <option value="">select..</option>
                     <option value="galacticEmpire">Galactic Empire</option>
                     <option value="galacticRepublic">Galactic Republic</option>
                     <option value="jediOrder">Jedi Order</option>
