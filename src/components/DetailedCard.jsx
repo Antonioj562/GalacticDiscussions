@@ -20,7 +20,6 @@ const DetailedCard = ({title, textBody, alliance, created_at, votes}) => {
             <h2>{alliance}</h2>
             <h2>{title}</h2>
             <h3>{textBody}</h3>
-            <h3>Votes: {votes}</h3>
             <h5>Created at: {formattedCreatedAt}</h5>
         </div>
     )
