@@ -1,0 +1,9 @@
+.HomeFeedContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardItem > h1 {
+    margin-bottom: 10px; 
+}

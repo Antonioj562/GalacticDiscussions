@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { supabase } from '../client.js';
 import DetailedCard from '../components/DetailedCard.jsx';
-import CommentCard from '../components/CommentCard.jsx';
+import '../styles/detailedpost.css';
 
 const DetailedPost = () => {
     let {id} = useParams();
@@ -53,9 +53,7 @@ const DetailedPost = () => {
 
     const handleAddComment = async () => {
         if (!newComment.trim() || !newCommentName.trim()) return;
-        console.log(post.comments)
         try {
-            console.log("comment" + post.comment)
             console.log(post.comments)
             const updatedComments = [...post.comments, { [newCommentName.trim()]: newComment.trim() }];
             const { data, error } = await supabase

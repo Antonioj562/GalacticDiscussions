@@ -1,6 +1,7 @@
 import { supabase } from "../client";
 import { useState, useEffect } from "react";
 import Card from '../components/Card.jsx'
+import '../styles/homefeed.css'
 
 const HomeFeed = () => {
     const [posts, setPosts] = useState([]);

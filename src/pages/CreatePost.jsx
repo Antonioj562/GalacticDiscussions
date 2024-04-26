@@ -1,5 +1,6 @@
 import { supabase } from "../client";
 import { useState } from "react";
+import '../styles/createpost.css'
 
 const CreatePost = () => {
     const [post, setPost] = useState({
@@ -42,9 +43,6 @@ const CreatePost = () => {
         }
         return randomString;
     };
-
-    
-    console.log(randomString);
 
     return (
         <div className="createContainer">

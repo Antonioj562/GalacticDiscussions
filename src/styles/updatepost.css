@@ -1,31 +1,30 @@
-.createContainer {
+.updateContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 1px solid #ccc;
     padding: 10px;
-    border-radius: 20px;
 }
 
-.createContainer form {
+.updateContainer form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.createContainer label {
+.updateContainer label {
     margin-top: 10px;
 }
 
-.createContainer input[type="text"],
-.createContainer textarea,
-.createContainer select {
+.updateContainer input[type="text"],
+.updateContainer textarea,
+.updateContainer select {
     resize: none;
     border-radius: 10px;
     padding: 5px;
     margin-top: 5px;
 }
 
-.createContainer input[type="submit"] {
+.updateContainer input[type="submit"] {
     margin-top: 10px;
 }

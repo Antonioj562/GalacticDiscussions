@@ -1,6 +1,7 @@
 import { useParams  } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { supabase } from "../client";
+import '../styles/updatepost.css'
 
 const UpdatePost = () => {
     let {id} = useParams();
@@ -18,7 +19,6 @@ const UpdatePost = () => {
             .select("*")
             .eq('id', id)
             setPost(data[0])
-            console.log(data)
         }
         fetchPosts();
     }, []);

@@ -1,0 +1,27 @@
+.CardContainer {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.CardContainer h2 {
+    margin-bottom: 10px;
+}
+
+.CardContainer h3 {
+    margin-bottom: 15px;
+}
+
+.CardContainer a {
+    text-decoration: none;
+    color: blue;
+}
+
+.CardContainer a:hover {
+    text-decoration: underline;
+}
+
+.CardContainer img {
+    border-radius: 50%; /* This makes the image circular */
+}
