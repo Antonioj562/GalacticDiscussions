@@ -54,14 +54,15 @@ const DetailedPost = () => {
                 textBody={posts && posts.textBody}
                 alliance={posts && posts.alliance}
                 votes={posts&& posts.votes}
-                created_at={posts&& posts.created_at}/>
+                created_at={posts&& posts.created_at}
+                postSecret={posts&& posts.postSecret}
+                />
             <br></br>
             <div className='voteContainer'>
                 <button onClick={incrementVote}>Upvote</button>
                 <h4>Votes: {votes}</h4>
                 <button onClick={decrementVote}>Downvote</button>
             </div>
-            <h3>Future delete and edit post option here</h3>
             <h3>Comment Section:</h3>
             
         </div>

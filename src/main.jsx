@@ -7,6 +7,7 @@ import Layout from './pages/Layout.jsx'
 import CreatePost from './pages/CreatePost.jsx'
 import HomeFeed from './pages/HomeFeed.jsx'
 import DetailedPost from './pages/DetailedPost.jsx'
+import UpdatePost from './pages/UpdatePost.jsx'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -31,10 +32,8 @@ root.render(
           
           <Route index={false} path="/HomeFeed/" element={<HomeFeed />}/>
           <Route index={false} path="/CreatePost/" element={<CreatePost />}/>
-          <Route index={false} path="/DetailedPost/:id" element={<DetailedPost/>}>
-            
-          </Route>
-
+          <Route index={false} path="/DetailedPost/:id" element={<DetailedPost/>}/>
+          <Route index={false} path="/UpdatePost/:id" element={<UpdatePost/>}/>
 
         </Route>
 

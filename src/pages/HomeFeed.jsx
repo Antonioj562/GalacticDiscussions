@@ -17,7 +17,8 @@ const HomeFeed = () => {
 
     return (
         <div className="HomeFeedContainer">
-            <h2>Galactic Discussions</h2>
+            <h1>Galactic Discussions</h1>
+            <br></br>
             <div className="cardItem">
                 {
                     posts && posts.length > 0 ?

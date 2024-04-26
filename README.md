@@ -4,7 +4,7 @@ Submitted by: **Antonio Loyola**
 
 This web app: **A form to share your thoughts on different Star Wars news, favorite character, favorite movie, and find out how other people feel about Star Wars**
 
-Time spent: **14** hours spent in total
+Time spent: **19** hours spent in total
 
 ## Required Features
 

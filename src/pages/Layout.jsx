@@ -19,10 +19,6 @@ const layout = () => {
                             Create Post
                         </Link>
                     </ul>
-                    <br></br>
-                    <ul className="navLink" key="allBotsButton">
-                        test1
-                    </ul>
                 </ul>
             </nav>
             <Outlet/>
