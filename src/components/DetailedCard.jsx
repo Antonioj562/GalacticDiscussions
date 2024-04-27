@@ -1,6 +1,12 @@
 import { useState } from "react";
 import { supabase } from "../client";
 import { Link } from "react-router-dom";
+import sithOrderImage from '../assets/sithOrder.png';
+import separatistImage from '../assets/separatist.png';
+import rebelsImage from '../assets/rebelAlliance.png';
+import jediOrderImage from '../assets/jediOrder.png';
+import galacticRepublicImage from '../assets/galacticRepublic.png';
+import galacticEmpireImage from '../assets/galacticEmpire.png';
 
 
 const DetailedCard = ({id, title, textBody, alliance, created_at, votes, postSecret}) => {
@@ -49,10 +55,35 @@ const DetailedCard = ({id, title, textBody, alliance, created_at, votes, postSec
         }
     }
 
+    let allianceImage;
+    switch (alliance) {
+        case "sithOrder":
+            allianceImage = sithOrderImage;
+            break;
+        case "separatist":
+            allianceImage = separatistImage;
+            break;
+        case "rebelAlliance":
+            allianceImage = rebelsImage;
+            break;
+        case "jediOrder":
+            allianceImage = jediOrderImage;
+            break;
+        case "galacticRepublic":
+            allianceImage = galacticRepublicImage;
+            break;
+        case "galacticEmpire":
+            allianceImage = galacticEmpireImage;
+            break;
+        default:
+            allianceImage = null; 
+            break;
+    }
+
     return (
         <div className="CardContainer">
             <h1>Galactic Discussion: What is being discussed here?</h1>
-            <h2>{alliance}</h2>
+            {allianceImage && <img src={allianceImage} alt={alliance} width="100" height="100" />}
             <h2>{title}</h2>
             <h3>{textBody}</h3>
             <h5>Created at: {formattedCreatedAt}</h5>

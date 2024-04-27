@@ -2,9 +2,11 @@
 
 Submitted by: **Antonio Loyola**
 
+https://galacticdiscussions.netlify.app/
+
 This web app: **A form to share your thoughts on different Star Wars news, favorite character, favorite movie, and find out how other people feel about Star Wars**
 
-Time spent: **22** hours spent in total
+Time spent: **23** hours spent in total
 
 ## Required Features
 
@@ -43,12 +45,14 @@ Here's a walkthrough of implemented user stories:
 
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+
+https://galacticdiscussions.netlify.app/
+
+
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+
 
 ## Notes
 

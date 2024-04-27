@@ -43,7 +43,7 @@ const Card = ({id, title, textBody, alliance, created_at, votes}) => {
             allianceImage = galacticEmpireImage;
             break;
         default:
-            allianceImage = null; // Or you can provide a default image
+            allianceImage = null; 
             break;
     }
 

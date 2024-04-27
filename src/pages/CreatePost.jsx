@@ -22,7 +22,8 @@ const CreatePost = () => {
                     title: post.title, 
                     textBody: post.textBody, 
                     alliance: post.alliance,
-                    postSecret: secret
+                    postSecret: secret,
+                    comments: [{ "Name": "Comment" }]
                     });
                 setRandomString(secret);
         } catch (error){
