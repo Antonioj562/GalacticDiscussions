@@ -53,6 +53,7 @@ GIF created with ...
 ## Notes
 
 Describe any challenges encountered while building the app.
+I had challenging figuring out the routing again especially with trying to pass params and objects through them. I managed to use my last project and figure out my routing issues. However, I kept having issues with my data base and the formatting of the json for the array. After rethinking how my json should be formatted I found and efficient way to keep track of the comments for this project and be able to create a posting of Star Wars inspiried threads.
 
 ## License
 
